@@ -35,7 +35,7 @@
                         <div class="card-body">
                           <h3 class="card-title text-white">Lionel Messi</h3>
                           <h5 class="card-text text-secondary fw-regular">36 Goals <span class="text-white fs-3 fw-bold">.</span> 120 Assist</h5>
-                          <button class="btn btn-primary px-5">SELECT</button>
+                          <button onclick="addToSelect(this);this.disabled= true;" id="select-messi" class="btn-select btn btn-primary px-5">SELECT</button>
                         </div>
                       </div>
                 </div>
@@ -47,7 +47,7 @@
                         <div class="card-body">
                           <h3 class="card-title text-white">Neymar Jr</h3>
                           <h5 class="card-text text-secondary fw-regular">30 Goals <span class="text-white fs-3 fw-bold">.</span> 118 Assist</h5>
-                          <button class="btn btn-primary px-5">SELECT</button>
+                          <button onclick="addToSelect(this);this.disabled= true;" id="select-neymar" class="btn-select btn btn-primary px-5">SELECT</button>
                         </div>
                       </div>
                 </div>
@@ -59,24 +59,19 @@
                         <div class="card-body">
                           <h3 class="card-title text-white">Kylian Mbappé</h3>
                           <h5 class="card-text text-secondary fw-regular">25 Goals <span class="text-white fs-3 fw-bold">.</span> 100 Assist</h5>
-                          <button class="btn btn-primary px-5">SELECT</button>
+                          <button onclick="addToSelect(this);this.disabled= true;" id="select-mbappe" class="btn-select btn btn-primary px-5">SELECT</button>
                         </div>
                       </div>
                 </div>
               </div>
               
               <div class="col-3">
-                <div class="p-3 border bg-black">
-                    <h4 class="text-white pt-1">Selected V</h4>
-                    <ol type="1" class="text-white text-start pt-5">
-                        <li>Sumon</li> <br>
-                        <li></li> <br>
-                        <li></li> <br>
-                        <li></li> <br>
-                        <li></li>
-                    </ol>
+                <div class="p-3 border bg-black" style="height: 357px;">
+                    <h4 class="text-white pt-1">Selected <span id="selected-num">0</span></h4>
+                    <ol type="1" id="player-list" class="text-white text-start pt-5"></ol> 
                 </div>
               </div>
+
               <div class="col-3">
                 <div class="border">
                     <div class="card bg-dark width: 18rem" >
@@ -84,7 +79,7 @@
                         <div class="card-body">
                           <h3 class="card-title text-white">Vítor Machado</h3>
                           <h5 class="card-text text-secondary fw-regular">20 Goals <span class="text-white fs-3 fw-bold">.</span> 65 Assist</h5>
-                          <button class="btn btn-primary px-5">SELECT</button>
+                          <button onclick="addToSelect(this);this.disabled= true;" id="select-vitor" class="btn-select btn btn-primary px-5">SELECT</button>
                         </div>
                       </div>
                 </div>
@@ -96,7 +91,7 @@
                         <div class="card-body">
                           <h3 class="card-title text-white">Sergio Ramos</h3>
                           <h5 class="card-text text-secondary fw-regular">25 Goals <span class="text-white fs-3 fw-bold">.</span> 78 Assist</h5>
-                          <button class="btn btn-primary px-5">SELECT</button>
+                          <button onclick="addToSelect(this);this.disabled= true;" id="select-ramos" class="btn-select btn btn-primary px-5">SELECT</button>
                         </div>
                       </div>
                 </div>
@@ -108,7 +103,7 @@
                         <div class="card-body">
                           <h3 class="card-title text-white">Renato Sanches</h3>
                           <h5 class="card-text text-secondary fw-regular">13 Goals <span class="text-white fs-3 fw-bold">.</span> 80 Assist</h5>
-                          <button class="btn btn-primary px-5">SELECT</button>
+                          <button onclick="addToSelect(this);this.disabled= true;" id="select-sanches" class="btn-select btn btn-primary px-5">SELECT</button>
                         </div>
                       </div>
                 </div>
@@ -150,6 +145,7 @@
     </footer>
 
     <script src="js/utility.js"></script>
+    <script src="js/selected.js"></script>
     <script src="js/budget.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>

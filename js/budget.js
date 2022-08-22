@@ -5,7 +5,7 @@ document.getElementById('btn-calculate').addEventListener('click',function(){
 function playerExpenses(){
     const perPlayer = getElementValueById('per-player');
     const forPlayerExpenses = getTextElementValueById('playerExpenses');
-    setTextElementValue('playerExpenses', perPlayer*5);
+    setTextElementValue('playerExpenses', perPlayer*playerArray.length);
     return forPlayerExpenses;
 }
 
