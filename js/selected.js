@@ -23,7 +23,6 @@ function addToSelect(select){
     }
 
     playerArray.push(playerObj);
-    
     if(playerArray.length>5){
         return alert("You can't add more than five.")
     }
